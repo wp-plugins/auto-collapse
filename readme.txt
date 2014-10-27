@@ -24,6 +24,7 @@ Auto Collapse the Admin Sidebar and Customizer Sidebar.
 == Screenshots ==
 
 1. It's easy to show/hide the admin sidebar. 
+2. Auto Collapse works for the customizer as well. 
 
 == Changelog ==
 

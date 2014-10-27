@@ -23,11 +23,11 @@ A simple script to auto collapse the admin sidebar.
 
 = Does this plugin do anything else? =
 
-Nope, it simply collapese the menu.
+Nope, it simply collapse the menu.
 
 == Screenshots ==
 
-It's the same thing as clicking the collapse button. 
+http://updates.fullsteamlabs.com/public/auto-collapse.gif
 
 == Changelog ==
 

@@ -23,7 +23,7 @@ Auto Collapse the Admin Sidebar and Customizer Sidebar.
 
 == Screenshots ==
 
-<img src="http://updates.fullsteamlabs.com/public/auto-collapse.gif">
+1. http://updates.fullsteamlabs.com/public/auto-collapse.gif
 
 == Changelog ==
 

@@ -8,11 +8,11 @@ Stable tag: 4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A simple script to auto collapse the admin sidebar.
+Auto Collapse the Admin Sidebar and Customizer Sidebar.
 
 == Description ==
 
-A simple script to auto collapse the admin sidebar.
+Auto Collapse the Admin Sidebar and Customizer Sidebar.
 
 == Installation ==
 
@@ -21,18 +21,16 @@ A simple script to auto collapse the admin sidebar.
 
 == Frequently Asked Questions ==
 
-= Does this plugin do anything else? =
-
-Nope, it simply collapse the menu.
-
 == Screenshots ==
 
-http://updates.fullsteamlabs.com/public/auto-collapse.gif
+<img src="http://updates.fullsteamlabs.com/public/auto-collapse.gif">
 
 == Changelog ==
 
 = 1.0 =
 * First release
+= 1.1 =
+* Fixed a few layout issues and added support for collapsing the customizer.
 
 == Upgrade Notice ==
 

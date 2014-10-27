@@ -2,7 +2,7 @@
     transition: all 200ms linear;
 }
 .folded #adminmenu, .folded #adminmenu .wp-submenu, .folded #adminmenuback, .folded #adminmenuwrap {
-    transition: all 100ms 200ms linear;
+    transition: all 100ms 200ms linear; 
 }
 .folded #adminmenu .wp-submenu {transition: all 0ms 0ms linear !important; display: none;}
 #adminmenu .wp-submenu {transition: all 0ms 0ms linear !important;}
@@ -24,6 +24,7 @@
 }
 .wp-full-overlay.expanded a.collapse-sidebar {
     background: none repeat scroll 0 0 rgba(255, 255, 255, 0) !important;
+    width: 0px;
 }
 
 .wp-full-overlay .collapse-sidebar-arrow:before, .collapse-sidebar-label {display: none;}

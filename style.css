@@ -1,8 +1,17 @@
 #adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
     transition: all 200ms linear;
+    position: absolute;
+    opacity: 0.96;
+    z-index: 10000 !important;
 }
+ul#adminmenu {background: transparent;}
+#wpcontent, #wpfooter { margin-left: 36px !important; }
+.folded #wpcontent, .folded #wpfooter { margin-left: auto; }
 .folded #adminmenu, .folded #adminmenu .wp-submenu, .folded #adminmenuback, .folded #adminmenuwrap {
     transition: all 100ms 0ms linear; 
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 10000 !important;
 }
 .folded #adminmenu .wp-submenu {transition: all 0ms 0ms linear !important; display: none;}
 #adminmenu .wp-submenu {transition: all 0ms 0ms linear !important;}

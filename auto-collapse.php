@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Auto Collapse
  * Description: A simple script to auto collapse the admin sidebar. 
- * Version: 1.1
+ * Version: 1.1.1
  * Author: FullSteam Labs
  */
 

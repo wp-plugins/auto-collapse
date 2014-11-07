@@ -1,17 +1,23 @@
+.expanded #adminmenuback  {background: rgba(0,0,0,0.8);}
+#adminmenu .wp-has-current-submenu .wp-submenu, #adminmenu .wp-has-current-submenu .wp-submenu.sub-open {background: rgba(90, 90, 90, 0.5);}
+#adminmenu li.menu-top:hover, #adminmenu li.opensub > a.menu-top, #adminmenu li > a.menu-top:focus {background: rgba(0,0,0,0.25);}
+#adminmenu .wp-submenu {background: rgba(0,0,0,0.75);}
 #adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
-    transition: all 200ms linear;
-    position: absolute;
-    opacity: 0.96;
+    transition: width 200ms linear;
     z-index: 10000 !important;
+    overflow-x: visible;
 }
+#adminmenuwrap.floating {position: fixed;}
+#adminmenuwrap {background: transparent; position: absolute;}
+.folded #adminmenuwrap {position: fixed;}
 ul#adminmenu {background: transparent;}
 #wpcontent, #wpfooter { margin-left: 36px !important; }
 .folded #wpcontent, .folded #wpfooter { margin-left: auto; }
 .folded #adminmenu, .folded #adminmenu .wp-submenu, .folded #adminmenuback, .folded #adminmenuwrap {
-    transition: all 100ms 0ms linear; 
-    overflow-x: hidden;
-    position: fixed;
+    transition: width 100ms 0ms linear; 
+    overflow: hidden;
     z-index: 10000 !important;
+    height: auto;
 }
 .folded #adminmenu .wp-submenu {transition: all 0ms 0ms linear !important; display: none;}
 #adminmenu .wp-submenu {transition: all 0ms 0ms linear !important;}

@@ -28,10 +28,14 @@ Auto Collapse the Admin Sidebar and Customizer Sidebar.
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * First release
-= 1.1 =
+= 1.1.0 =
 * Fixed a few layout issues and added support for collapsing the customizer.
+= 1.1.1 =
+* Added hover over content for admin sidebar.
+= 1.1.2 =
+* Reworked some js and added floating admin sidebar function.
 
 == Upgrade Notice ==
 

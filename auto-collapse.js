@@ -32,13 +32,13 @@ jQuery(document).ready(function($) {
     
     // Here's where the action is
     collapseIt($adminMenuWrap);
-    $('#adminmenuwrap, #adminmenuback').hover(function() { expandIt($adminMenuWrap); }); 
+    $('#adminmenuwrap, #adminmenuback').mouseenter(function() { expandIt($adminMenuWrap); }); 
     $('#wpcontent').mouseenter(function() { collapseIt($adminMenuWrap); });
     
     // Fancy footwork for menus that don't fit the window height
     var OldPos = 0;
     $(window).scroll(function() {
-        if ( $(window).height() < $(this).height() + 28 ) {
+        if ( $(window).height() < $adminMenuWrap.height() + 28 ) {
             var NewPos = $(this).scrollTop();
             if ( NewPos < OldPos && $adminMenuWrap.offset().top > NewPos + 28 ) { // Scrolling Up Above Wrap
                 $('.expanded #adminmenuwrap').css({'margin-top':NewPos});

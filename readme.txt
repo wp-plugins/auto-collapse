@@ -36,6 +36,8 @@ Auto Collapse the Admin Sidebar and Customizer Sidebar.
 * Added hover over content for admin sidebar.
 = 1.1.2 =
 * Reworked some js and added floating admin sidebar function.
+= 1.1.3 =
+* Quick bug fix for the floating admin menu.
 
 == Upgrade Notice ==
 

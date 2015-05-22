@@ -41,6 +41,8 @@ Auto Collapse the Admin Sidebar and Customizer Sidebar.
 = 1.1.4 =
 * Removed animations
 * Added hover on current item to keep icons in place. 
+= 1.1.5 =
+* Added Hide on Load
 
 == Upgrade Notice ==
 

@@ -3,7 +3,7 @@ Contributors: jasonmj
 Donate link: http://www.fullsteamlabs.com/
 Tags: 
 Requires at least: 3.0.1
-Tested up to: 4.0
+Tested up to: 4.2.4
 Stable tag: 4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -41,10 +41,9 @@ Auto Collapse the Admin Sidebar and Customizer Sidebar.
 = 1.1.4 =
 * Removed animations
 * Added hover on current item to keep icons in place. 
-= 1.1.6er =
+= 1.1.5 =
+* The changelog for this version got lost. 
+= 1.1.6 =
 * Added Hide on Load
-
-== Upgrade Notice ==
-
-= 1.0 =
-This is the first release 
+= 1.1.7 =
+* Adjusted css for collapsed sidebar on customizer

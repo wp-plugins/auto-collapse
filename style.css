@@ -38,6 +38,8 @@ ul#adminmenu {background: transparent;}
     left: 0;
     height: 100%;
     width: 25px;
+    position: fixed;
+    margin-left: 0;
 }
 .wp-core-ui .wp-full-overlay.collapsed .collapse-sidebar span {display: none !important; visibility: hidden;}
 .wp-full-overlay.expanded {margin-left: 0px !important;}

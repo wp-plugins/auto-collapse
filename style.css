@@ -62,6 +62,12 @@ ul#adminmenu {background: transparent;}
 }
 
 .wp-full-overlay .collapse-sidebar-arrow:before, .collapse-sidebar-label {display: none;}
+.wp-full-overlay *, .wp-full-overlay .collapse-sidebar, .wp-full-overlay-main, .wp-full-overlay-sidebar,
+#customize-info, #customize-theme-controls>ul>.accordion-section {
+    transition: all 0ms linear !important;
+    -moz-transition: all 0ms linear !important;
+    -webkit-transition: all 0ms linear !important;
+}
 
 @media screen and (max-width: 782px) {
     #wpcontent {margin-left: 0 !important;}

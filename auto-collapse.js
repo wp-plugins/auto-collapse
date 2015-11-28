@@ -22,6 +22,20 @@ jQuery(document).ready(function($) {
     $('#adminmenuwrap, #adminmenuback').mouseenter(function() { expandIt($adminMenuWrap); }); 
     $('#wpcontent').mouseenter(function() { collapseIt($adminMenuWrap); });
     $('img').load(function($){collapseIt($adminMenuWrap);});
+    $('.wp-has-submenu').on('hover', function(e){
+        e.preventDefault();
+        $(this).toggleClass('opensub');
+        if($('.opensub .wp-submenu').length) {
+            var submenu = $('.opensub .wp-submenu');
+            var submenu_bottom = submenu.offset().top + submenu.height()
+            var scrolled = $(window).scrollTop();
+            var submenu_dist = submenu_bottom - scrolled;
+            if (submenu_dist > $(window).height()) {
+                var menu_diff = -(submenu_dist - $(window).height())-32;
+                submenu.css('margin-top', menu_diff);
+            }
+        } 
+    });
 });
 
 // Customizer Collapse

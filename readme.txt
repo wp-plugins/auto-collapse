@@ -27,6 +27,10 @@ Auto Collapse the Admin Sidebar and Customizer Sidebar.
 2. Auto Collapse works for the customizer as well. 
 
 == Changelog ==
+= 1.2.1 =
+* Improved submenu display when menu height is greater than page height
+= 1.2.0 =
+* Removed animations from Customizer
 = 1.1.9 =
 * Fixed Mobile Menu margin-left
 = 1.1.8 =

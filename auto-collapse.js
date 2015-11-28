@@ -1,6 +1,7 @@
 // WP Admin Sidebar Collapse
 jQuery(document).ready(function($) {
     
+    $('#adminmenu li.wp-has-submenu, #adminmenu li.wp-has-submenu *').off('**').unbind();
     // Define the functions
     $adminMenuWrap = $('#adminmenuwrap');
     var collapseIt = function($adminMenuWrap) {
@@ -19,23 +20,47 @@ jQuery(document).ready(function($) {
     }
     
     // Here's where the action is
-    $('#adminmenuwrap, #adminmenuback').mouseenter(function() { expandIt($adminMenuWrap); }); 
-    $('#wpcontent').mouseenter(function() { collapseIt($adminMenuWrap); });
-    $('img').load(function($){collapseIt($adminMenuWrap);});
-    $('.wp-has-submenu').on('hover', function(e){
-        e.preventDefault();
-        $(this).toggleClass('opensub');
-        if($('.opensub .wp-submenu').length) {
-            var submenu = $('.opensub .wp-submenu');
-            var submenu_bottom = submenu.offset().top + submenu.height()
-            var scrolled = $(window).scrollTop();
-            var submenu_dist = submenu_bottom - scrolled;
-            if (submenu_dist > $(window).height()) {
-                var menu_diff = -(submenu_dist - $(window).height())-32;
-                submenu.css('margin-top', menu_diff);
-            }
-        } 
+    $(window).load(function($){collapseIt($adminMenuWrap);});
+    
+    $('#adminmenuwrap, #adminmenuback').hoverIntent({
+        over: function() {
+            expandIt($adminMenuWrap)
+        },
+        out: function(){
+            collapseIt($adminMenuWrap)
+        },
+        timeout: 250,
+        sensitivity: 1,
+        interval: 10
     });
+    
+    // Open Submenus and Adjust the Location
+    $('#adminmenu li.wp-has-submenu').hoverIntent({
+        over: function() {
+            $(this).addClass('opensub');
+            if($('.opensub .wp-submenu').length) {
+                var submenu = $('.opensub .wp-submenu');
+                var submenu_bottom = submenu.offset().top + submenu.height();
+                var scrolled = $(window).scrollTop();
+                var submenu_dist = submenu_bottom - scrolled;
+                if (submenu_dist > ($(window).height() - 32)) {
+                    submenu.css('margin-top', '-' + (submenu.height() - 20) + 'px');
+                }
+            }
+        },
+        out: function(){
+            if ($('#adminmenu').data('wp-responsive')) {
+                // The menu is in responsive mode, bail
+                return;
+            }
+            
+            $(this).removeClass('opensub').find('.wp-submenu').css('margin-top', '');
+        },
+        timeout: 138,
+        sensitivity: 5,
+        interval: 80
+    });
+    
 });
 
 // Customizer Collapse
